@@ -40,7 +40,7 @@
             "request": "launch",
             "type": "dart",
             "flutterMode": "release",
-            "program": "lib/main-prod.dart",
+            "program": "lib/main_prod.dart",
             "args": [
                 "--flavor",
                 "prod"

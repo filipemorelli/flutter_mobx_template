@@ -1,6 +1,6 @@
 #include "Generated.xcconfig"
 
-FLUTTER_TARGET=lib/main-qa.dart
+FLUTTER_TARGET=lib/main_qa.dart
 
 ASSET_PREFIX=qa
 BUNDLE_NAME=SecretWall qa

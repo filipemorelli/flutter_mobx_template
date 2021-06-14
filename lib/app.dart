@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
-import 'flavors.dart';
-import 'pages/my_home_page.dart';
+import 'package:flutter_mobx_template/flavors.dart';
+import 'package:flutter_mobx_template/routes/route_names.dart';
+import 'package:flutter_mobx_template/routes/routes.dart';
+import 'package:flutter_mobx_template/themes/dark_theme.dart';
+import 'package:flutter_mobx_template/themes/light_theme.dart';
 
 class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: F.title,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(),
+      debugShowCheckedModeBanner: false,
+      theme: lightTheme,
+      darkTheme: darkTheme,
+      initialRoute: RouteNames.initialRoute,
+      routes: routes,
     );
   }
 }

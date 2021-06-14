@@ -4,6 +4,7 @@ enum Flavor {
   PROD,
 }
 
+// ignore: avoid_classes_with_only_static_members
 class F {
   static Flavor? appFlavor;
 
@@ -20,4 +21,16 @@ class F {
     }
   }
 
+  static String get serverHost {
+    switch (appFlavor) {
+      case Flavor.DEV:
+        return 'http://192.168.2.110:3000';
+      case Flavor.QA:
+        return 'http://192.168.2.110:3000';
+      case Flavor.PROD:
+        return 'http://192.168.2.110:3000';
+      default:
+        return 'http://localhost:3000';
+    }
+  }
 }
