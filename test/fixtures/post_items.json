@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "text": "sample text",
+        "createdAt": 1622734145402
+    },
+    {
+        "id": 2,
+        "text": "sample text 2",
+        "createdAt": 1622734145402
+    }
+]
