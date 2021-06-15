@@ -9,7 +9,7 @@ import 'package:provider/single_child_widget.dart';
 final List<SingleChildWidget> providers = <Provider<dynamic>>[
   Provider<Dio>(
     lazy: false,
-    create: (BuildContext ctx) => Api(F.serverHost).init(),
+    create: (BuildContext ctx) => Api(F.env.baseUrl).init(),
   ),
   Provider<PostRepository>(
     create: (BuildContext ctx) => PostRepository(ctx.read<Dio>()),

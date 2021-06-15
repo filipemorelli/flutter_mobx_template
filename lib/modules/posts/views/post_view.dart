@@ -19,7 +19,7 @@ class PostView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(F.title),
+        title: Text(F.env.title),
         actions: <Widget>[
           IconButton(
             icon: const Icon(Icons.add),

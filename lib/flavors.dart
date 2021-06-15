@@ -1,3 +1,8 @@
+import 'package:flutter_mobx_template/env/env.dart';
+import 'package:flutter_mobx_template/env/env_dev.dart';
+import 'package:flutter_mobx_template/env/env_prod.dart';
+import 'package:flutter_mobx_template/env/env_qa.dart';
+
 enum Flavor {
   DEV,
   QA,
@@ -8,29 +13,16 @@ enum Flavor {
 class F {
   static Flavor? appFlavor;
 
-  static String get title {
+  static Env get env {
     switch (appFlavor) {
       case Flavor.DEV:
-        return 'SecretWall dev';
+        return Env.fromJson(envDev);
       case Flavor.QA:
-        return 'SecretWall qa';
+        return Env.fromJson(envQa);
       case Flavor.PROD:
-        return 'SecretWall';
+        return Env.fromJson(envProd);
       default:
-        return 'title';
-    }
-  }
-
-  static String get serverHost {
-    switch (appFlavor) {
-      case Flavor.DEV:
-        return 'http://192.168.2.110:3000';
-      case Flavor.QA:
-        return 'http://192.168.2.110:3000';
-      case Flavor.PROD:
-        return 'http://192.168.2.110:3000';
-      default:
-        return 'http://localhost:3000';
+        return Env.fromJson(envProd);
     }
   }
 }
