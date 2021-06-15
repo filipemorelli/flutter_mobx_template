@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 3,
+      "creation-date": "2021-06-02 10:11",
+      "text": "This is another post!"
+    },
+    {
+      "id": 2,
+      "creation-date": "2021-06-02 12:11",
+      "text": "This is a post!"
+    },
+    {
+      "id": 1,
+      "creation-date": "2021-06-01 14:11",
+      "text": "First!"
+    },
+    {
+      "text": "I just added this from Postman",
+      "creation-date": "2021-06-03 11:10",
+      "id": 5
+    },
+    {
+      "text": "I just added this from Postman2",
+      "creation-date": "2021-06-04 10:10",
+      "id": 6
+    }
+  ]
+}
