@@ -25,9 +25,14 @@ void main() {
   test('shold return a list of posts', () async {
     final List<dynamic> payload = fixture('post_items.json') as List<dynamic>;
     dioAdapter.onGet(
-        '/posts',
-        (RequestHandler<dynamic> request) =>
-            request.reply(HttpStatus.ok, payload));
+      '/posts',
+      (RequestHandler<dynamic> request) =>
+          request.reply(HttpStatus.ok, payload),
+      queryParameters: <String, dynamic>{
+        '_sort': 'id',
+        '_order': 'desc',
+      },
+    );
 
     final List<Post> result = await repository.getAll();
     expect(result, isA<List<Post>>());
@@ -70,7 +75,7 @@ void main() {
     post.text = Faker().randomGenerator.string(100, min: 51);
 
     dioAdapter.onPut(
-      '/posts',
+      '/posts/$id',
       (RequestHandler<dynamic> request) =>
           request.reply(HttpStatus.ok, post.toJson()),
       data: post.toJson(),

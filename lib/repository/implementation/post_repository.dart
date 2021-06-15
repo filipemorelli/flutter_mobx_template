@@ -50,7 +50,13 @@ class PostRepository extends IPostRepository {
   @override
   Future<List<Post>> getAll() async {
     try {
-      final Response<List<dynamic>> result = await _dio.get('/posts');
+      final Response<List<dynamic>> result = await _dio.get(
+        '/posts',
+        queryParameters: <String, dynamic>{
+          '_sort': 'id',
+          '_order': 'desc',
+        },
+      );
       return List<Map<String, dynamic>>.from(result.data ?? <dynamic>[])
           .map((Map<String, dynamic> e) => Post.fromJson(e))
           .toList();
