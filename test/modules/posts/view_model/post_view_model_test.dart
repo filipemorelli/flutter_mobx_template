@@ -1,4 +1,3 @@
-import 'package:faker/faker.dart';
 import 'package:flutter_mobx_template/models/post.dart';
 import 'package:flutter_mobx_template/modules/posts/view_model/post_view_model.dart';
 import 'package:flutter_mobx_template/repository/implementation/post_repository.dart';
@@ -33,20 +32,6 @@ void main() {
       when(repository.getAll()).thenThrow(Exception('Fake error'));
       await postViewModel.loadPosts();
       expect(postViewModel.posts.isEmpty, true);
-    });
-  });
-
-  group('Validation Text Post', () {
-    test('should return String when post text is invalid', () async {
-      const String? text = null;
-      final String? result = postViewModel.validateTextPost(text);
-      expect(result?.isNotEmpty, true);
-    });
-
-    test('should return null when post text is valid', () async {
-      final String text = Faker().randomGenerator.string(30, min: 10);
-      final String? result = postViewModel.validateTextPost(text);
-      expect(result, null);
     });
   });
 }
