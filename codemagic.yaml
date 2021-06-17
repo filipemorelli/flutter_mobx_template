@@ -1,0 +1,235 @@
+# Automatically generated on 2021-06-07 UTC from https://codemagic.io/app/60be1666362aac9148b3b88f/settings
+# Note that this configuration is not an exact match to UI settings. Review and adjust as necessary.
+
+workflows:
+  master:
+    name: Prod
+    max_build_duration: 60
+    environment:
+      vars:
+        APP_CENTER_PROJECT: flutter_mobx_template
+        APP_CENTER_USERNAME_ORGANIZATION: morellitecinfo-gmail.com
+        APP_CENTER_TOKEN: Encrypted(Z0FBQUFBQmd2OEo0S3JMVkZLcFFzUGRPSXFoZGZ2WHc0Tm83enJIeWNib1g2elRWUlVhaU85bFdES1JCOXBUMDN2b01TeHB3UXlabE43VURnVTVXZG40OGQ5ZTgxeV8yWUZKWVlmbjJCbzdUbl9tTXpwakpxWjhlUmFVcTVpX19PeU1qMXRSY2FsMjM=)
+        FCI_KEYSTORE_PATH: /tmp/keystore.keystore
+        FCI_KEYSTORE: Encrypted(Z0FBQUFBQmd2b0VmSy1yUHplcVItMXVqVnB6NnRxS2w1NlVtZEQ4RENGSEhSdFRvYjlWcGhWR09kZWxGYnJnUEQ4TXB6d0JQak5qWHpOTW1yV2N3RmFCWG1Ob2NDVlVpX293N1NxaElRMG42d2p5WkJxNk8tem5DeTk4UGlQOEJ0dXkya01obC1vWWtYOFBsXzZxSkV4LU44UzhuUWpFRFhjMGI2anNzMUtCdkRRMl9ud1VkdFVWb0lEVUNjUF9XYWhQU1YxM1VJQXN3bUZkLTZ1NFZIM1l4b1hoWFRtajFlV1o5dHhyLVBZa3lpVlRIZDVyNVA4SHVFRV81Y1ZjM01CQVhwMF9JTG5UbV84ZnpaS1VHZjRhR0dUMkdfVXMzS1FFdGZ2VzBDVkg1OVRhWS1KNE90di16YUpHM3VhMFJnN3RGNnNOY0ozTV9uWFFkTHJMRVRncnpzZk9ZZUpSU2I2RVU2aXZfRTNUREtleFhpRi1TczgybjkxX25tNGRFOXQ0aWVGZmFWQ3dtUUM4aVpWZWRiVDI5b2U1LVAxSTU5SVRyZ1dqQXpFYUZCTTE2ZVlGcngtekFObEN5bVMwekZtU0hOV29KUXMtUmhkQU15SGUtSVNnQTE0OEtFWWZNeU1iZ20yWjR0N3Ztd2t5OE4tSkZ4cGhOd0dxa1ROaUt4YkVXOHVFSFFhQ1hTRGFRdC1ueVBFU2J3di1aN1R1aDVRWHZvekhwWnNjRkdkRjEzUXhxYVFjNU8tTVJ1dUhwQ2FLRk9vRzMzYVVldHQ0ejNYNzBwbkVRNzF0Q185LVJfenhZMkxYb0pLZTg0ZW8wLVhnOWNMeTQ2d0cxSWxQRV9yRXlaUzJ3WjdFZTFlN0xSMjN5T3lKNUg4dDd3WTRjODJlS0NYS0VqanY4Z2JrbU5DcTRpLTRrVHNIaXlGeUVFOGxWS2o2UF9UbXBxMmVVaDlnQlN6QU9MM2xYWEFZdTM1bnJTME5ldUYwSDhFaTZuSHZ4X0pkOUl5eVhHaUJnSUs5R21MM0hXdEFVT19QOGRTa1pGcDV4cmx6bDg2X1YtbDZBdklPaFFRQ09GYTFtUkFpY1dneXFnWGNrVUdXaFpGSW5zS0R6Q0ktZU1QS0FTRm5nSHI5VXBBTjhjUVQ4eDdpdGVPS3Nva2g0UmNhMlh4bHhjZVM2dDdQMldCeG5ZOGVORk1DeXN0OEllWG5sNlg2ekpGUllrOHJDbjdOWUYwT0xZUUJyNTFPSHJlOUdRR3lTMEE1Q1U1Z2taU2VfU2RES3gtYk1QV29lZVRrUG82dk0zUUZXVjFmWUFMbDNKZjRTMGltQk1Ma2h3SmlPX2swNG9NZ25MNGdVY25XY3Q4bUNHYnVCLV9iRkQwcGhIRUp2d00yMGlHeXdqTFE1TWRucW5vNmNIWGZzWGdlMUZRdEtKNnR4Wl9JVEVFYjRidTlwUl9YbkVHZ05WdVBGalUyVkRFRENCRzMteFM4bnlpdmhWUHE4RUtyOWloR19Zb2xHMGFQNXFRMFFyWF9zMFA1bks4VGpUbFIwSUc4bWU4Zm5IWWxUVDZzUWNhT2tiM3BYSERuMHVHeThCajZteTR4VkV6aXE2bzAwZ2lFQVk2cUJWWHdNSUxPUjZaZTBUM3JMcUd4TmFWZGNBOGk2WlFNYU90WXBhUlRTcFd4MVVqSnJNbm1tV1lseE9CTWlST3RFUlNSSTVEeW5ueUVhNW9qSGVTcGJqNDdwSWVNcHk5Zll2MkRReHI4NklqcWhuejZndDhWM01ZSUh1bHY3dVZVLTNWRlliUURkell3YldfQjdxUVZFV2ZLaUs5ek1XcDd6M3RGM1RySVdlNExXVzhhTUxtWFNXbEVfdVVZRktTM2xRTHRIZkdtMnRnSlh1eHdHZ1R0X0RqaDczRURTU2ptT3p6OHhRbUJMaWtUY3o5TWlpTnNJSkl0a3hiWF9MRGdxVHEyX2xHSG11UmJrdVpIUkkyTVBRb0xiUW5XbnJvZG11ZjV3M0ZWd0o3R0VoQVNDcEFTa1oxaDB6enBLMUVHOWVTWlM2RVVwY2YtbGdWRHFabG9vVGNoWG15LTlDc2lxcE11REZUNjRMei1paE5uVE1RX2V1a3dDTmd2Zzk1WldId0x1TXd2aHR2WXNzWFgwb3dvX2ZIamRwclRYSGFVcmE1YmtFa1E1WHRPYXZZZVowa3lyYy1fcGRiQllISWVLQ1RVR3BPTy01YWp2bUFoRVdYOWRTUURoc2tLSnVqanB4VEdkVVJBT3B6bUR3aVE4NHFGY0I3N3hsaVkxNmVON09teEotc1VLV3NlcVRNU2dKaUxTWmZCZ1laUDdZV0NrMlVMQXRhUFJrM2NTV2htVEhIZ09Xam5HTnh1bjBqWWxfcTB6U0RkMUhjZGpONjZrRFp0cnl4aVBOSTh1Z2lJMTFnUlpTcWNKbGo0dW1ZcUFZQWVPdlRKdVVSR3puT1lET056WjNPdWY2NTlFNVA2MjI1SzM4eENYbkJ3UVFCbkVLYjBobDlQV0dacmtZMXc0U3ZmbWJsR19BX2JjM0JGa1RNMnFoS0t1NXdiNUczbUtHQnFLR1ZZbWpudDU0U1RYb0poMkd4LTZDZFVUeEhDTGRQdE5UdVM5WG9DYllfRW50RzVrVERXRUJzRzNGZmFSUXZDSkxlbHZUMUdDUFlaV1RJSmdOdmFfS2hRWnNPYUp1TjhGczJXTlJxZnNlQzJSOUhpX0w1RG9FUmpvajlZd0xDSW9wQWx0VUY1dlBJVGUzbVpILWNNMFJzS29XT2FBUVFmTUZZYjBoelpXbmtKaU41emRYdkFPcjlSTUdHZklybEUtOEFZTnEwRUhoTllsZlUwQ2VYdFNqSnN3YkEtZjdFb1BqaXRKSTA0eEthZG04ZUZPZlE1VGFWbnlNZmVkZjZCdU9VR2VuZF9ROVBPSm14ZGVBT0dwYng4eUFXNU8wcDJBTmUtZVQyV3VvclFJVmRfeWc4ejg5UjN6WWNfQW9QX2FYQW5XN0JrUVkwTkxveE80Y2dNZmh2ajdnSm1zYU5qcDJfRXNqUXlselpqcG0yNEhOTHU1QlpGdXdfZkhGcnJyX2dFLVBYWUxmd0ljWHE2MExaYUxvd1Z2dWZwNUpXWWZPVEJ3OTd4ZHBQTlRlSDJpRzhGZUYybnQ0M1haNjA4OGxpTVNQa0JtYUgwVVdVRjNyRjlydjZTVTdNWGJVbU9VRFNGbzc2ZDEzd2dwUmx5cmtrblh0RUROaVhvRlN2cHFtNzRnN0FOZGZXZTM4SG9GSDFkRm01U1JUUy1HMVNxZjNkbENCWWtoMHEyVkthVG9YQ2Y3M0JfekhMS3ppcTBiVkVtLTlVc1dIazF3ekt6NDJiVGxKRlFFaEtkLUgzbzVxSklqd3lfM1o5Zndkb0VONnREZnBsTm5RdjRjRWNOT3paZ2RFLWc3anVXbjlQY0xBWm56Vjd1MFZuaU9rU01FTWpCNEdvRUdHek5nd3lWR3Iwd3N5d1hhNG5ZVFZrMGF4YVA0M1NXUXo4S2NfUXVZMHJOUjhfak9KWG5RTjZ6dUxYMWQ2d0phaHdXVDVfbHJhSzZQN0RMSzJJTVN4alg5cWFvczFKMlFCLW5ydllRNUQ3Mm44a20yanpTMFE2cHpoTUtMTXpLb1VnaEdTWkZ4aWs2UkdmN2FoSmNIVzAyckVEVmxXa1lBT1NDbkpNdzI4cy1ORkREN0hSM1ZSZURyUVEwMHhWSy10VmV2Um1lcjR2bWZTejg5Ml93YjlPdVFSb1daalRqVnlSd1o2eDJCclYydUhjcWFhbWdMT09PMXFZRDBHM25iRGdHODJFdUFYSWh6R2lJTW1MeENRVjdnRHFKbXk2aG5ZTllUajFTVkprY04xRDV3ZWhjdnlXMU5LdE5SS3pkVXp1ZldLaU5XWnJ3N2hENDdHMGFTNWdaaUV5RWRRQlVHUGVoRFRsSmFrS2JXanRpamctN1RUN3BwVlBuX09xbkZNSF9aZXVzUTdOUHpQSEdVR19pYnlab0RPLVJHX1poMHVVUlh4UTAtV1Jnal90N0x2RzQwYzBBUzYwOEpINmVxOTNkNnEwTzVrejc1eEpJR3l6RXNWejJNbzdHSzREUHFlUTJ3WkdnUkUxbFRCTGFobk0waXJSUC1VUUJCVFM0YmducWhPeWtZRjYzT1dRNFo5T0dDMmxnMVBZTVFKVDQtMFhHczJPVGhGcWRzWDlhQlFZeHFtdmNFOU1PQU5xcGFuc0F0TTRJRW5MV01jVmRReUdRT1VIc2tOM2dQR3NfR1RQZF9tMTgxOXBRSmt1OUtFX1VWdFFGWkZESjBpakJ5M2otdE9KR19oNU9NeDZ3aXBhcldOOFBXZEpWNHQ3OW14dWZGSE9Kd2J6ZVI2eWxqVEpMU3IxV1JkeEp1U3lISUgtSXozTXcxa2Q2UzZpMElFaGplNXlKNWc2ek1fb2VjYVQ0SE9nakZBSER2YnJKalhyYXU2dXlpR3dyeDBMRzIzd2ZqVFV2MWFCai12VGRvX1FiU1IwQ2p5ZUphNzhNT0dvclVKS0ZoZTVsZzItVG9QNFFJak1xMUpqbEZaNDFDN04xTzBnbG1idWU4aGhRYzVXYkRmUDdRMEo5QTNfMnlsQ0ZQNVh5dzc2RzZ6MjJtcmZvT1FIa2JCVWQyVnREdkNsZF9tZUhmUTZLMFhhWXh6ckg4YlIyb2FnaVF1WG9HbWEweS1sbDktVTh3WFRvZ2ZmblJKMHBWVjJTR3cxVjNPRnVsNVhiZzNJV3NpcGpnNVRLVUZtdkhfNjV2ODY2RFlxZVZCa3FmaDdoaU16VkZNWUhhWWhscTYtVU03NWpmaE0tZlhVZDV5b1Y2VjI4cjdFN0FpVmR2TXdpWXNiX2gwTG1DWDh4SHNCelJnamw2X2xtQ2pwMmh0V1c2WTJBZWlxeXc1Q2R1Y0tkV0FZUE5ZajFkU05Fa1o1YUZVaEVFOU5BYTdac3hGQVNHU2JFakk0ZDZZdXFSbklMLWhfWHRUb2lnWEdNQ283Uy1tSWg4QU9PaUNOeEdHWlFxdlB6NDl2RThialpSdVB6UnJzc08tc2ZkQkVhS2pOMm5iWlp6MlRpSUVjV09pVnZHeGdRMU1jM3ljRkNKbWxUZ0pRSUtPVnJhd2dJREVlZUliTXlXQXhIdlhpQVFueEI4TVJzdGFmaTc0S0JUN0dXcEI0em9wYWU2LUZaeVowY1NuT3dfSnJ6dEhFek1nXzliZU5xcW41VjRwUG11WHB4aF94NnlnckF2WlJqV2g0dk12Y3kyNEtId0xtd2xvUEJabFQwSE9meDJ6TU9fWFpQQ3daNEpJS0FCLWpjWkxBUmI5OWtRNWRNTHVVNkFFcjE2aHM2cXBZZkRuYVJGX1c3U1E2dDRTeTJoVlEtSjJxRVZQYVZJci1JT3lGVkR3VUJCMFlVSXpmVjN6YzBMc1VvbXZuUWZZMjVkSFJIVTNiUWhpbFhsNFpIY0p3d1ExMmk3S1U0NnpHaGZyOW5fUEdESnM0MGhsdW5rdjM5V0RsM0ZsRlFXNFd4QUJsMWJ6akJkWW1YdEFBektTV2owX25pMlAwZU45Z3JIMXNOaVFPaHJJWmZoNllsTWVGUl9Yb0VzVXhhbGR2YXFwNmFMUXdaRnlWbHJhOGUyVFNNWHFzZ1VLZVhOUXNrbVh5QnE0d1dPM3oxNS05TkExdVFFS0lubGk1MzQwTF9jVGJ2ZWVYRkowcWNSZjJPUTVybnoyT1RRMDlQakdzNVU0MFdoY3NNemdmdDVpYy00WGJrQVVPaHVBMmlNWGxUQzdESlhPMFlzR0NqYXMzNlhidlBIbDk1SllTZl9raGcydkJnbExVSk43RXU5ZXpLRjEyenlOQkFVTnVsWlp0cVRJdHFqams3UkVmdnVvYVJvZ2dEUHNiQVk3YmMwZHdnbFd3TUQwanNkSmVKTGZZNnU3am1WSHpja1Q1aV9UX18wVHNrTGw4STNsTUo1UXV1bnBJWDdQWjIzUnRpcFlVRDBUQ3FGYnpENkpWNmdWNUgxRG10THJLYkVHUXV0blpNVWFWR2otU3NYYjlhOFlqQmtyc0RBSmhNT0k2c05Tci15V2dlTnFCcWdGYUZQSkdsc2c5WXc5MTA2alpOdXJuZnFobmt1VVhOSjU4QXBUUGRyQUF4TmZCeXR1NldpMkEyQ1VSamJEdWtCczRZS0JtOG1KMV9pSG80Mw==)
+        FCI_KEYSTORE_PASSWORD: Encrypted(Z0FBQUFBQmd2b0VmVHlXM3JNUFpIRE51MUZvRURLYnBSRXZjeUVRNGpXTlowZTlkc2lvZzhRMmJZMFVGeDQzWXc4enF3MW41SUJrZHNJV1hSZE9PcXhRRjJoUFJuXzBkYlE9PQ==)
+        FCI_KEY_PASSWORD: Encrypted(Z0FBQUFBQmd2b0VmZFlBVnZhTk9aeGFYRE10ZFBYVXVVclZfRWNPYzFrT2puY3NWRUR3LXNlMm1qUlZRbkotczBDVEx1dHF2S1diM3pzdzhIRHpvYnVkRG42U0R4bnQ3Qmc9PQ==)
+        FCI_KEY_ALIAS: Encrypted(Z0FBQUFBQmd2b0VmUW1sRjd3UWJJRlpMc0UyQzRsa3V3YWxMQ2pYeTdpVF9SdHBETEZ5TjRmTjh2NzM1bEYxM2JUVVQ1cTNIcGx2VHl0SnRmaVZ5TWVfSk9fSTZVX3RaWlE9PQ==)
+      flutter: 2.2.0
+      xcode: latest
+      cocoapods: default
+    cache:
+      cache_paths:
+        - $FLUTTER_ROOT/.pub-cache
+        - $FCI_BUILD_DIR/ios/Pods
+        - $FCI_BUILD_DIR/android/.gradle
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: master
+          include: true
+          source: true
+    scripts:
+      - |
+        # set up key.properties
+        echo $FCI_KEYSTORE | base64 --decode > $FCI_KEYSTORE_PATH
+        cat >> "$FCI_BUILD_DIR/android/key.properties" <<EOF
+        storePassword=$FCI_KEYSTORE_PASSWORD
+        keyPassword=$FCI_KEY_PASSWORD
+        keyAlias=$FCI_KEY_ALIAS
+        storeFile=/tmp/keystore.keystore
+        EOF
+      - |
+        # set up local properties
+        echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/android/local.properties"
+      - flutter packages pub get
+      - flutter analyze
+      - flutter test
+      - flutter build apk --release --flavor prod -t lib/main_prod.dart
+      # - find . -name "Podfile" -execdir pod install \;
+      # - flutter build ios --release --no-codesign
+    artifacts:
+      - build/**/outputs/**/*.apk
+      - build/**/outputs/**/*.aab
+      - build/**/outputs/**/mapping.txt
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - flutter_drive.log
+    publishing:
+      email:
+        recipients:
+          - morellitecinfo@gmail.com
+      scripts:
+        - |
+          #!/usr/bin/env zsh
+
+          echo 'Installing App Center CLI tools'
+          npm install -g appcenter-cli
+
+          echo "Find build artifacts"
+          apkPath=$(find build -name "*prod-release.apk" | head -1)
+          echo "Found apk at $apkPath"
+
+          if [[ -z ${apkPath} ]]
+          then
+              echo "No apks were found, skip publishing to App Center"
+          else
+              echo "Publishing $apkPath to App Center"
+              appcenter distribute release \
+                  --group 'Collaborators Prod' \
+                  --file "${apkPath}" \
+                  --release-notes 'App submission via Codemagic' \
+                  --app $APP_CENTER_USERNAME_ORGANIZATION/$APP_CENTER_PROJECT \
+                  --token "${APP_CENTER_TOKEN}" \
+                  --quiet
+          fi
+
+          # echo "Find build artifacts"
+          # ipaPath=$(find ~/ipas -name "*prod-release.ipa" | head -1)
+          # echo "Found ipa at $ipaPath"
+          # if [[ -z ${ipaPath} ]]
+          # then
+          #     echo "No ipas were found, skip publishing to App Center"
+          # else
+          #     echo "Publishing $ipaPath to App Center"
+          #     appcenter distribute release \
+          #         --group 'Collaborators Prod' \
+          #         --file "${ipaPath}" \
+          #         --release-notes 'App submission via Codemagic' \
+          #         --app $APP_CENTER_USERNAME_ORGANIZATION/$APP_CENTER_PROJECT \
+          #         --token "${APP_CENTER_TOKEN}" \
+          #         --quiet
+          # fi
+  qa:
+    name: QA
+    max_build_duration: 60
+    environment:
+      vars:
+        APP_CENTER_PROJECT: flutter_mobx_template
+        APP_CENTER_USERNAME_ORGANIZATION: morellitecinfo-gmail.com
+        APP_CENTER_TOKEN: Encrypted(Z0FBQUFBQmd2OEo0S3JMVkZLcFFzUGRPSXFoZGZ2WHc0Tm83enJIeWNib1g2elRWUlVhaU85bFdES1JCOXBUMDN2b01TeHB3UXlabE43VURnVTVXZG40OGQ5ZTgxeV8yWUZKWVlmbjJCbzdUbl9tTXpwakpxWjhlUmFVcTVpX19PeU1qMXRSY2FsMjM=)
+        FCI_KEYSTORE_PATH: /tmp/keystore.keystore
+        FCI_KEYSTORE: Encrypted(Z0FBQUFBQmd2b0VmSy1yUHplcVItMXVqVnB6NnRxS2w1NlVtZEQ4RENGSEhSdFRvYjlWcGhWR09kZWxGYnJnUEQ4TXB6d0JQak5qWHpOTW1yV2N3RmFCWG1Ob2NDVlVpX293N1NxaElRMG42d2p5WkJxNk8tem5DeTk4UGlQOEJ0dXkya01obC1vWWtYOFBsXzZxSkV4LU44UzhuUWpFRFhjMGI2anNzMUtCdkRRMl9ud1VkdFVWb0lEVUNjUF9XYWhQU1YxM1VJQXN3bUZkLTZ1NFZIM1l4b1hoWFRtajFlV1o5dHhyLVBZa3lpVlRIZDVyNVA4SHVFRV81Y1ZjM01CQVhwMF9JTG5UbV84ZnpaS1VHZjRhR0dUMkdfVXMzS1FFdGZ2VzBDVkg1OVRhWS1KNE90di16YUpHM3VhMFJnN3RGNnNOY0ozTV9uWFFkTHJMRVRncnpzZk9ZZUpSU2I2RVU2aXZfRTNUREtleFhpRi1TczgybjkxX25tNGRFOXQ0aWVGZmFWQ3dtUUM4aVpWZWRiVDI5b2U1LVAxSTU5SVRyZ1dqQXpFYUZCTTE2ZVlGcngtekFObEN5bVMwekZtU0hOV29KUXMtUmhkQU15SGUtSVNnQTE0OEtFWWZNeU1iZ20yWjR0N3Ztd2t5OE4tSkZ4cGhOd0dxa1ROaUt4YkVXOHVFSFFhQ1hTRGFRdC1ueVBFU2J3di1aN1R1aDVRWHZvekhwWnNjRkdkRjEzUXhxYVFjNU8tTVJ1dUhwQ2FLRk9vRzMzYVVldHQ0ejNYNzBwbkVRNzF0Q185LVJfenhZMkxYb0pLZTg0ZW8wLVhnOWNMeTQ2d0cxSWxQRV9yRXlaUzJ3WjdFZTFlN0xSMjN5T3lKNUg4dDd3WTRjODJlS0NYS0VqanY4Z2JrbU5DcTRpLTRrVHNIaXlGeUVFOGxWS2o2UF9UbXBxMmVVaDlnQlN6QU9MM2xYWEFZdTM1bnJTME5ldUYwSDhFaTZuSHZ4X0pkOUl5eVhHaUJnSUs5R21MM0hXdEFVT19QOGRTa1pGcDV4cmx6bDg2X1YtbDZBdklPaFFRQ09GYTFtUkFpY1dneXFnWGNrVUdXaFpGSW5zS0R6Q0ktZU1QS0FTRm5nSHI5VXBBTjhjUVQ4eDdpdGVPS3Nva2g0UmNhMlh4bHhjZVM2dDdQMldCeG5ZOGVORk1DeXN0OEllWG5sNlg2ekpGUllrOHJDbjdOWUYwT0xZUUJyNTFPSHJlOUdRR3lTMEE1Q1U1Z2taU2VfU2RES3gtYk1QV29lZVRrUG82dk0zUUZXVjFmWUFMbDNKZjRTMGltQk1Ma2h3SmlPX2swNG9NZ25MNGdVY25XY3Q4bUNHYnVCLV9iRkQwcGhIRUp2d00yMGlHeXdqTFE1TWRucW5vNmNIWGZzWGdlMUZRdEtKNnR4Wl9JVEVFYjRidTlwUl9YbkVHZ05WdVBGalUyVkRFRENCRzMteFM4bnlpdmhWUHE4RUtyOWloR19Zb2xHMGFQNXFRMFFyWF9zMFA1bks4VGpUbFIwSUc4bWU4Zm5IWWxUVDZzUWNhT2tiM3BYSERuMHVHeThCajZteTR4VkV6aXE2bzAwZ2lFQVk2cUJWWHdNSUxPUjZaZTBUM3JMcUd4TmFWZGNBOGk2WlFNYU90WXBhUlRTcFd4MVVqSnJNbm1tV1lseE9CTWlST3RFUlNSSTVEeW5ueUVhNW9qSGVTcGJqNDdwSWVNcHk5Zll2MkRReHI4NklqcWhuejZndDhWM01ZSUh1bHY3dVZVLTNWRlliUURkell3YldfQjdxUVZFV2ZLaUs5ek1XcDd6M3RGM1RySVdlNExXVzhhTUxtWFNXbEVfdVVZRktTM2xRTHRIZkdtMnRnSlh1eHdHZ1R0X0RqaDczRURTU2ptT3p6OHhRbUJMaWtUY3o5TWlpTnNJSkl0a3hiWF9MRGdxVHEyX2xHSG11UmJrdVpIUkkyTVBRb0xiUW5XbnJvZG11ZjV3M0ZWd0o3R0VoQVNDcEFTa1oxaDB6enBLMUVHOWVTWlM2RVVwY2YtbGdWRHFabG9vVGNoWG15LTlDc2lxcE11REZUNjRMei1paE5uVE1RX2V1a3dDTmd2Zzk1WldId0x1TXd2aHR2WXNzWFgwb3dvX2ZIamRwclRYSGFVcmE1YmtFa1E1WHRPYXZZZVowa3lyYy1fcGRiQllISWVLQ1RVR3BPTy01YWp2bUFoRVdYOWRTUURoc2tLSnVqanB4VEdkVVJBT3B6bUR3aVE4NHFGY0I3N3hsaVkxNmVON09teEotc1VLV3NlcVRNU2dKaUxTWmZCZ1laUDdZV0NrMlVMQXRhUFJrM2NTV2htVEhIZ09Xam5HTnh1bjBqWWxfcTB6U0RkMUhjZGpONjZrRFp0cnl4aVBOSTh1Z2lJMTFnUlpTcWNKbGo0dW1ZcUFZQWVPdlRKdVVSR3puT1lET056WjNPdWY2NTlFNVA2MjI1SzM4eENYbkJ3UVFCbkVLYjBobDlQV0dacmtZMXc0U3ZmbWJsR19BX2JjM0JGa1RNMnFoS0t1NXdiNUczbUtHQnFLR1ZZbWpudDU0U1RYb0poMkd4LTZDZFVUeEhDTGRQdE5UdVM5WG9DYllfRW50RzVrVERXRUJzRzNGZmFSUXZDSkxlbHZUMUdDUFlaV1RJSmdOdmFfS2hRWnNPYUp1TjhGczJXTlJxZnNlQzJSOUhpX0w1RG9FUmpvajlZd0xDSW9wQWx0VUY1dlBJVGUzbVpILWNNMFJzS29XT2FBUVFmTUZZYjBoelpXbmtKaU41emRYdkFPcjlSTUdHZklybEUtOEFZTnEwRUhoTllsZlUwQ2VYdFNqSnN3YkEtZjdFb1BqaXRKSTA0eEthZG04ZUZPZlE1VGFWbnlNZmVkZjZCdU9VR2VuZF9ROVBPSm14ZGVBT0dwYng4eUFXNU8wcDJBTmUtZVQyV3VvclFJVmRfeWc4ejg5UjN6WWNfQW9QX2FYQW5XN0JrUVkwTkxveE80Y2dNZmh2ajdnSm1zYU5qcDJfRXNqUXlselpqcG0yNEhOTHU1QlpGdXdfZkhGcnJyX2dFLVBYWUxmd0ljWHE2MExaYUxvd1Z2dWZwNUpXWWZPVEJ3OTd4ZHBQTlRlSDJpRzhGZUYybnQ0M1haNjA4OGxpTVNQa0JtYUgwVVdVRjNyRjlydjZTVTdNWGJVbU9VRFNGbzc2ZDEzd2dwUmx5cmtrblh0RUROaVhvRlN2cHFtNzRnN0FOZGZXZTM4SG9GSDFkRm01U1JUUy1HMVNxZjNkbENCWWtoMHEyVkthVG9YQ2Y3M0JfekhMS3ppcTBiVkVtLTlVc1dIazF3ekt6NDJiVGxKRlFFaEtkLUgzbzVxSklqd3lfM1o5Zndkb0VONnREZnBsTm5RdjRjRWNOT3paZ2RFLWc3anVXbjlQY0xBWm56Vjd1MFZuaU9rU01FTWpCNEdvRUdHek5nd3lWR3Iwd3N5d1hhNG5ZVFZrMGF4YVA0M1NXUXo4S2NfUXVZMHJOUjhfak9KWG5RTjZ6dUxYMWQ2d0phaHdXVDVfbHJhSzZQN0RMSzJJTVN4alg5cWFvczFKMlFCLW5ydllRNUQ3Mm44a20yanpTMFE2cHpoTUtMTXpLb1VnaEdTWkZ4aWs2UkdmN2FoSmNIVzAyckVEVmxXa1lBT1NDbkpNdzI4cy1ORkREN0hSM1ZSZURyUVEwMHhWSy10VmV2Um1lcjR2bWZTejg5Ml93YjlPdVFSb1daalRqVnlSd1o2eDJCclYydUhjcWFhbWdMT09PMXFZRDBHM25iRGdHODJFdUFYSWh6R2lJTW1MeENRVjdnRHFKbXk2aG5ZTllUajFTVkprY04xRDV3ZWhjdnlXMU5LdE5SS3pkVXp1ZldLaU5XWnJ3N2hENDdHMGFTNWdaaUV5RWRRQlVHUGVoRFRsSmFrS2JXanRpamctN1RUN3BwVlBuX09xbkZNSF9aZXVzUTdOUHpQSEdVR19pYnlab0RPLVJHX1poMHVVUlh4UTAtV1Jnal90N0x2RzQwYzBBUzYwOEpINmVxOTNkNnEwTzVrejc1eEpJR3l6RXNWejJNbzdHSzREUHFlUTJ3WkdnUkUxbFRCTGFobk0waXJSUC1VUUJCVFM0YmducWhPeWtZRjYzT1dRNFo5T0dDMmxnMVBZTVFKVDQtMFhHczJPVGhGcWRzWDlhQlFZeHFtdmNFOU1PQU5xcGFuc0F0TTRJRW5MV01jVmRReUdRT1VIc2tOM2dQR3NfR1RQZF9tMTgxOXBRSmt1OUtFX1VWdFFGWkZESjBpakJ5M2otdE9KR19oNU9NeDZ3aXBhcldOOFBXZEpWNHQ3OW14dWZGSE9Kd2J6ZVI2eWxqVEpMU3IxV1JkeEp1U3lISUgtSXozTXcxa2Q2UzZpMElFaGplNXlKNWc2ek1fb2VjYVQ0SE9nakZBSER2YnJKalhyYXU2dXlpR3dyeDBMRzIzd2ZqVFV2MWFCai12VGRvX1FiU1IwQ2p5ZUphNzhNT0dvclVKS0ZoZTVsZzItVG9QNFFJak1xMUpqbEZaNDFDN04xTzBnbG1idWU4aGhRYzVXYkRmUDdRMEo5QTNfMnlsQ0ZQNVh5dzc2RzZ6MjJtcmZvT1FIa2JCVWQyVnREdkNsZF9tZUhmUTZLMFhhWXh6ckg4YlIyb2FnaVF1WG9HbWEweS1sbDktVTh3WFRvZ2ZmblJKMHBWVjJTR3cxVjNPRnVsNVhiZzNJV3NpcGpnNVRLVUZtdkhfNjV2ODY2RFlxZVZCa3FmaDdoaU16VkZNWUhhWWhscTYtVU03NWpmaE0tZlhVZDV5b1Y2VjI4cjdFN0FpVmR2TXdpWXNiX2gwTG1DWDh4SHNCelJnamw2X2xtQ2pwMmh0V1c2WTJBZWlxeXc1Q2R1Y0tkV0FZUE5ZajFkU05Fa1o1YUZVaEVFOU5BYTdac3hGQVNHU2JFakk0ZDZZdXFSbklMLWhfWHRUb2lnWEdNQ283Uy1tSWg4QU9PaUNOeEdHWlFxdlB6NDl2RThialpSdVB6UnJzc08tc2ZkQkVhS2pOMm5iWlp6MlRpSUVjV09pVnZHeGdRMU1jM3ljRkNKbWxUZ0pRSUtPVnJhd2dJREVlZUliTXlXQXhIdlhpQVFueEI4TVJzdGFmaTc0S0JUN0dXcEI0em9wYWU2LUZaeVowY1NuT3dfSnJ6dEhFek1nXzliZU5xcW41VjRwUG11WHB4aF94NnlnckF2WlJqV2g0dk12Y3kyNEtId0xtd2xvUEJabFQwSE9meDJ6TU9fWFpQQ3daNEpJS0FCLWpjWkxBUmI5OWtRNWRNTHVVNkFFcjE2aHM2cXBZZkRuYVJGX1c3U1E2dDRTeTJoVlEtSjJxRVZQYVZJci1JT3lGVkR3VUJCMFlVSXpmVjN6YzBMc1VvbXZuUWZZMjVkSFJIVTNiUWhpbFhsNFpIY0p3d1ExMmk3S1U0NnpHaGZyOW5fUEdESnM0MGhsdW5rdjM5V0RsM0ZsRlFXNFd4QUJsMWJ6akJkWW1YdEFBektTV2owX25pMlAwZU45Z3JIMXNOaVFPaHJJWmZoNllsTWVGUl9Yb0VzVXhhbGR2YXFwNmFMUXdaRnlWbHJhOGUyVFNNWHFzZ1VLZVhOUXNrbVh5QnE0d1dPM3oxNS05TkExdVFFS0lubGk1MzQwTF9jVGJ2ZWVYRkowcWNSZjJPUTVybnoyT1RRMDlQakdzNVU0MFdoY3NNemdmdDVpYy00WGJrQVVPaHVBMmlNWGxUQzdESlhPMFlzR0NqYXMzNlhidlBIbDk1SllTZl9raGcydkJnbExVSk43RXU5ZXpLRjEyenlOQkFVTnVsWlp0cVRJdHFqams3UkVmdnVvYVJvZ2dEUHNiQVk3YmMwZHdnbFd3TUQwanNkSmVKTGZZNnU3am1WSHpja1Q1aV9UX18wVHNrTGw4STNsTUo1UXV1bnBJWDdQWjIzUnRpcFlVRDBUQ3FGYnpENkpWNmdWNUgxRG10THJLYkVHUXV0blpNVWFWR2otU3NYYjlhOFlqQmtyc0RBSmhNT0k2c05Tci15V2dlTnFCcWdGYUZQSkdsc2c5WXc5MTA2alpOdXJuZnFobmt1VVhOSjU4QXBUUGRyQUF4TmZCeXR1NldpMkEyQ1VSamJEdWtCczRZS0JtOG1KMV9pSG80Mw==)
+        FCI_KEYSTORE_PASSWORD: Encrypted(Z0FBQUFBQmd2b0VmVHlXM3JNUFpIRE51MUZvRURLYnBSRXZjeUVRNGpXTlowZTlkc2lvZzhRMmJZMFVGeDQzWXc4enF3MW41SUJrZHNJV1hSZE9PcXhRRjJoUFJuXzBkYlE9PQ==)
+        FCI_KEY_PASSWORD: Encrypted(Z0FBQUFBQmd2b0VmZFlBVnZhTk9aeGFYRE10ZFBYVXVVclZfRWNPYzFrT2puY3NWRUR3LXNlMm1qUlZRbkotczBDVEx1dHF2S1diM3pzdzhIRHpvYnVkRG42U0R4bnQ3Qmc9PQ==)
+        FCI_KEY_ALIAS: Encrypted(Z0FBQUFBQmd2b0VmUW1sRjd3UWJJRlpMc0UyQzRsa3V3YWxMQ2pYeTdpVF9SdHBETEZ5TjRmTjh2NzM1bEYxM2JUVVQ1cTNIcGx2VHl0SnRmaVZ5TWVfSk9fSTZVX3RaWlE9PQ==)
+      flutter: 2.2.0
+      xcode: latest
+      cocoapods: default
+    cache:
+      cache_paths:
+        - $FLUTTER_ROOT/.pub-cache
+        - $FCI_BUILD_DIR/ios/Pods
+        - $FCI_BUILD_DIR/android/.gradle
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: 'develop'
+          include: true
+          source: true
+    scripts:
+      - |
+        # set up key.properties
+        echo $FCI_KEYSTORE | base64 --decode > $FCI_KEYSTORE_PATH
+        cat >> "$FCI_BUILD_DIR/android/key.properties" <<EOF
+        storePassword=$FCI_KEYSTORE_PASSWORD
+        keyPassword=$FCI_KEY_PASSWORD
+        keyAlias=$FCI_KEY_ALIAS
+        storeFile=/tmp/keystore.keystore
+        EOF
+      - |
+        # set up local properties
+        echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/android/local.properties"
+      - flutter packages pub get
+      - flutter analyze
+      - flutter test
+      - flutter build apk --release --flavor qa -t lib/main_qa.dart
+      # - find . -name "Podfile" -execdir pod install \;
+      # - flutter build ios --release --no-codesign
+    artifacts:
+      - build/**/outputs/**/*.apk
+      - build/**/outputs/**/*.aab
+      - build/**/outputs/**/mapping.txt
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - flutter_drive.log
+    publishing:
+      email:
+        recipients:
+          - morellitecinfo@gmail.com
+      scripts:
+        - |
+          #!/usr/bin/env zsh
+
+          echo 'Installing App Center CLI tools'
+          npm install -g appcenter-cli
+
+          echo "Find build artifacts"
+          apkPath=$(find build -name "*qa-release.apk" | head -1)
+          echo "Found apk at $apkPath"
+
+          if [[ -z ${apkPath} ]]
+          then
+              echo "No apks were found, skip publishing to App Center"
+          else
+              echo "Publishing $apkPath to App Center"
+              appcenter distribute release \
+                  --group 'Collaborators QA' \
+                  --file "${apkPath}" \
+                  --release-notes 'App submission via Codemagic' \
+                  --app $APP_CENTER_USERNAME_ORGANIZATION/$APP_CENTER_PROJECT \
+                  --token "${APP_CENTER_TOKEN}" \
+                  --quiet
+          fi
+
+          # echo "Find build artifacts"
+          # ipaPath=$(find ~/ipas -name "*qa-release.ipa" | head -1)
+          # echo "Found ipa at $ipaPath"
+          # if [[ -z ${ipaPath} ]]
+          # then
+          #     echo "No ipas were found, skip publishing to App Center"
+          # else
+          #     echo "Publishing $ipaPath to App Center"
+          #     appcenter distribute release \
+          #         --group 'Collaborators QA' \
+          #         --file "${ipaPath}" \
+          #         --release-notes 'App submission via Codemagic' \
+          #         --app $APP_CENTER_USERNAME_ORGANIZATION/$APP_CENTER_PROJECT \
+          #         --token "${APP_CENTER_TOKEN}" \
+          #         --quiet
+          # fi
+  tests:
+    name: tests
+    max_build_duration: 60
+    environment:
+      vars:
+        APP_CENTER_PROJECT: flutter_mobx_template
+        APP_CENTER_USERNAME_ORGANIZATION: morellitecinfo-gmail.com
+        APP_CENTER_TOKEN: Encrypted(Z0FBQUFBQmd4MHlSVE5pMTdFWXMycjJEU3FiWGROZnJ3MjdRMUVXLVIyY3htQ2tOeHFUU2lKNGk2cS1VV21BWTh5MzNyd3JTSWJSRHJKejNxa1FHQ1NObWtxRDRDWkh0SWs3OVhpYU1yZHVpS01JQ3EyUjkxYUdyQW1BM3ZZY2xIQ05TQUdFVFdRWXo=)
+      flutter: 2.2.0
+      xcode: latest
+      cocoapods: default
+    cache:
+      cache_paths:
+        - $FLUTTER_ROOT/.pub-cache
+        - $FCI_BUILD_DIR/ios/Pods
+        - $FCI_BUILD_DIR/android/.gradle
+    triggering:
+      events:
+        - pull_request
+      branch_patterns:
+        - pattern: '*'
+          include: true
+          source: true
+    scripts:
+      - flutter packages pub get
+      - flutter analyze
+      - flutter test
+    artifacts:
+      - flutter_drive.log
+    publishing:
+      email:
+        recipients:
+          - morellitecinfo@gmail.com
