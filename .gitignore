@@ -44,3 +44,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+.gitsecret/keys/random_seed
+!*.secret
+lib/env/env_prod.dart
+lib/env/env_qa.dart
