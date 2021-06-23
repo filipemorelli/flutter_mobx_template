@@ -9,57 +9,57 @@ part of 'new_post_view_model.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
 mixin _$NewPostViewModel on NewPostViewModelBase, Store {
-  Computed<bool>? _$isSavingComputed;
+  Computed<String>? _$errorMessageComputed;
 
   @override
-  bool get isSaving =>
-      (_$isSavingComputed ??= Computed<bool>(() => super.isSaving,
-              name: 'NewPostViewModelBase.isSaving'))
+  String get errorMessage =>
+      (_$errorMessageComputed ??= Computed<String>(() => super.errorMessage,
+              name: 'NewPostViewModelBase.errorMessage'))
           .value;
 
-  final _$_isSavingAtom = Atom(name: 'NewPostViewModelBase._isSaving');
+  final _$textAtom = Atom(name: 'NewPostViewModelBase.text');
 
   @override
-  bool get _isSaving {
-    _$_isSavingAtom.reportRead();
-    return super._isSaving;
+  String get text {
+    _$textAtom.reportRead();
+    return super.text;
   }
 
   @override
-  set _isSaving(bool value) {
-    _$_isSavingAtom.reportWrite(value, super._isSaving, () {
-      super._isSaving = value;
+  set text(String value) {
+    _$textAtom.reportWrite(value, super.text, () {
+      super.text = value;
     });
   }
 
-  final _$formKeyAtom = Atom(name: 'NewPostViewModelBase.formKey');
+  final _$savePostFutureAtom =
+      Atom(name: 'NewPostViewModelBase.savePostFuture');
 
   @override
-  GlobalKey<FormState> get formKey {
-    _$formKeyAtom.reportRead();
-    return super.formKey;
+  ObservableFuture<Post> get savePostFuture {
+    _$savePostFutureAtom.reportRead();
+    return super.savePostFuture;
   }
 
   @override
-  set formKey(GlobalKey<FormState> value) {
-    _$formKeyAtom.reportWrite(value, super.formKey, () {
-      super.formKey = value;
+  set savePostFuture(ObservableFuture<Post> value) {
+    _$savePostFutureAtom.reportWrite(value, super.savePostFuture, () {
+      super.savePostFuture = value;
     });
   }
 
-  final _$textControllerAtom =
-      Atom(name: 'NewPostViewModelBase.textController');
+  final _$isSavingPostAtom = Atom(name: 'NewPostViewModelBase.isSavingPost');
 
   @override
-  TextEditingController get textController {
-    _$textControllerAtom.reportRead();
-    return super.textController;
+  bool get isSavingPost {
+    _$isSavingPostAtom.reportRead();
+    return super.isSavingPost;
   }
 
   @override
-  set textController(TextEditingController value) {
-    _$textControllerAtom.reportWrite(value, super.textController, () {
-      super.textController = value;
+  set isSavingPost(bool value) {
+    _$isSavingPostAtom.reportWrite(value, super.isSavingPost, () {
+      super.isSavingPost = value;
     });
   }
 
@@ -67,8 +67,8 @@ mixin _$NewPostViewModel on NewPostViewModelBase, Store {
       AsyncAction('NewPostViewModelBase.addNewPost');
 
   @override
-  Future<Post> addNewPost(BuildContext context) {
-    return _$addNewPostAsyncAction.run(() => super.addNewPost(context));
+  Future<Post> addNewPost() {
+    return _$addNewPostAsyncAction.run(() => super.addNewPost());
   }
 
   final _$NewPostViewModelBaseActionController =
@@ -88,9 +88,10 @@ mixin _$NewPostViewModel on NewPostViewModelBase, Store {
   @override
   String toString() {
     return '''
-formKey: ${formKey},
-textController: ${textController},
-isSaving: ${isSaving}
+text: ${text},
+savePostFuture: ${savePostFuture},
+isSavingPost: ${isSavingPost},
+errorMessage: ${errorMessage}
     ''';
   }
 }

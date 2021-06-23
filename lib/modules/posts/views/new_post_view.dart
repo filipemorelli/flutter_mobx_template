@@ -1,19 +1,38 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:flutter_mobx_template/modules/posts/view_model/new_post_view_model.dart';
+import 'package:flutter_mobx_template/models/post.dart';
 
-import 'package:flutter_mobx_template/modules/posts/widgets/header_input_text.dart';
-import 'package:flutter_mobx_template/modules/posts/widgets/input_text.dart';
+import 'package:flutter_mobx_template/modules/posts/ui/widgets/header_input_text.dart';
+import 'package:flutter_mobx_template/modules/posts/ui/widgets/input_text.dart';
+import 'package:flutter_mobx_template/modules/posts/view_model/new_post_view_model.dart';
+import 'package:flutter_mobx_template/ui/functions/show_adaptive_dialog.dart';
 import 'package:flutter_mobx_template/ui/widgets/buttons/button_with_icon_full_size.dart';
 import 'package:flutter_mobx_template/ui/widgets/center_loading.dart';
 
 class NewPostPage extends StatelessWidget {
-  const NewPostPage({
+  NewPostPage({
     Key? key,
-    required this.newPostViewModel,
+    required this.viewModel,
   }) : super(key: key);
 
-  final NewPostViewModel newPostViewModel;
+  final NewPostViewModel viewModel;
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+
+  Future<void> saveNewPost(BuildContext context) async {
+    if (_formKey.currentState!.validate()) {
+      try {
+        final Post post = await viewModel.addNewPost();
+        // close BottomSheet and return post to previus page
+        Navigator.of(context).pop(post);
+      } catch (e) {
+        showAdaptiveDialog(
+          context: context,
+          title: 'Error',
+          content: viewModel.errorMessage,
+        );
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -30,25 +49,28 @@ class NewPostPage extends StatelessWidget {
       ),
       child: SingleChildScrollView(
         child: Form(
-          key: newPostViewModel.formKey,
+          key: _formKey,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               const HeaderInputText(text: 'New Post'),
               InputText(
-                textEditingController: newPostViewModel.textController,
-                validator: newPostViewModel.validateTextPost,
+                onChanged: (String value) => viewModel.text = value,
+                validator: viewModel.validateTextPost,
               ),
               Observer(
                 builder: (_) {
-                  return newPostViewModel.isSaving
-                      ? const CenterLoading()
-                      : ButtonWithIconFullSize(
-                          onPressed: () => newPostViewModel.addNewPost(context),
-                          text: 'save',
-                          icon: const Icon(Icons.add),
-                        );
+                  if (viewModel.isSavingPost) {
+                    return const CenterLoading();
+                  }
+                  return ButtonWithIconFullSize(
+                    onPressed: viewModel.text.isNotEmpty
+                        ? () => saveNewPost(context)
+                        : null,
+                    text: 'save',
+                    icon: const Icon(Icons.add),
+                  );
                 },
               ),
             ],
