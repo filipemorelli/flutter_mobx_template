@@ -8,7 +8,7 @@ class ButtonWithIconFullSize extends StatelessWidget {
     required this.icon,
   }) : super(key: key);
 
-  final void Function() onPressed;
+  final void Function()? onPressed;
   final String text;
   final Icon icon;
 

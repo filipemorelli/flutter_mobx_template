@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
+import 'dart:async';
+
 import 'package:flutter_mobx_template/models/post.dart';
 import 'package:flutter_mobx_template/repository/i_post_repository.dart';
-import 'package:flutter_mobx_template/ui/functions/show_adaptive_dialog.dart';
 import 'package:mobx/mobx.dart';
 
 part 'new_post_view_model.g.dart';
@@ -14,14 +14,7 @@ abstract class NewPostViewModelBase with Store {
   final IPostRepository _repository;
 
   @observable
-  bool _isSaving = false;
-  @observable
-  GlobalKey<FormState> formKey = GlobalKey<FormState>();
-  @observable
-  TextEditingController textController = TextEditingController(text: '');
-
-  @computed
-  bool get isSaving => _isSaving;
+  String text = '';
 
   @action
   String? validateTextPost(String? value) {
@@ -31,36 +24,29 @@ abstract class NewPostViewModelBase with Store {
     return null;
   }
 
+  @observable
+  ObservableFuture<Post> savePostFuture = ObservableFuture<Post>.error('');
+
+  @computed
+  String get errorMessage => savePostFuture.status == FutureStatus.rejected
+      ? savePostFuture.error.toString()
+      : '';
+
+  @observable
+  bool isSavingPost = false;
+
   @action
-  Future<Post> addNewPost(BuildContext context) async {
+  Future<Post> addNewPost() async {
     try {
-      _isSaving = true;
-      if (!formKey.currentState!.validate()) {
-        throw const FormatException('The Form is invalid');
-      }
-      final Post post = await _repository.add(
-        text: textController.text,
-        creationDate: DateTime.now().toString(),
-      );
-      textController.clear(); // empty TextEditingController
-      Navigator.of(context).pop(post); // close BottomSheet
-      _isSaving = false;
+      isSavingPost = true;
+      savePostFuture = _repository
+          .add(text: text, creationDate: DateTime.now().toString())
+          .asObservable();
+      final Post post = await savePostFuture;
+      isSavingPost = false;
       return post;
-    } on FormatException catch (e, stackTrace) {
-      _isSaving = false;
-      showAdaptiveDialog(
-        context: context,
-        title: 'Error',
-        content: e.message,
-      );
-      return Future<Post>.error(e, stackTrace);
     } catch (e, stackTrace) {
-      _isSaving = false;
-      await showAdaptiveDialog(
-        context: context,
-        title: 'Error',
-        content: e.toString(),
-      );
+      isSavingPost = false;
       return Future<Post>.error(e, stackTrace);
     }
   }

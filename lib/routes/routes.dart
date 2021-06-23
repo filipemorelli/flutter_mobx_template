@@ -7,7 +7,7 @@ import 'package:provider/provider.dart';
 
 final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   RouteNames.posts: (BuildContext context) => PostView(
-        postViewModel: PostViewModel(
+        viewModel: PostViewModel(
           Provider.of<PostRepository>(context, listen: false),
         ),
       ),
