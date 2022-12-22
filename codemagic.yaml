@@ -27,6 +27,7 @@ workflows:
       - flutter packages pub get
       - flutter analyze
       - flutter test
+      - flutter build apk --debug --flavor dev -t lib/main_dev.dart
     artifacts:
       - flutter_drive.log
     publishing:
