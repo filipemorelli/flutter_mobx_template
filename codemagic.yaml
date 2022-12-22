@@ -8,7 +8,7 @@ workflows:
       vars:
         APP_CENTER_PROJECT: flutter_mobx_template
         APP_CENTER_USERNAME_ORGANIZATION: andres@tarmac.io
-      flutter: 2.2.0
+      flutter: stable
       xcode: latest
       cocoapods: default
     cache:
